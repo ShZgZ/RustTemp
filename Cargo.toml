@@ -1,0 +1,6 @@
+[package]
+name = "RustTemp"
+version = "0.1.0"
+authors = ["ShZgZ <s.shogo.z89@gmail.com>"]
+
+[dependencies]
