@@ -1,5 +1,5 @@
 [package]
-name = "RustTemp"
+name = "rust_temp"
 version = "0.1.0"
 authors = ["ShZgZ <s.shogo.z89@gmail.com>"]
 
