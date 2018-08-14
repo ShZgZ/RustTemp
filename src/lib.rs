@@ -19,6 +19,14 @@ mod tests {
         assert_eq!(gate::or_gate(0, 1), 1);
         assert_eq!(gate::or_gate(1, 1), 1);
     }
+
+    #[test]
+    fn not_and_gate_tests(){
+        assert_eq!(gate::not_and_gate(0, 0), 1);
+        assert_eq!(gate::not_and_gate(1, 0), 1);
+        assert_eq!(gate::not_and_gate(0, 1), 1);
+        assert_eq!(gate::not_and_gate(1, 1), 0);
+    }
 /*
     #[test]
     fn another () {
