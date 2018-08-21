@@ -34,6 +34,20 @@ pub fn not_and_gate (x1: i32, x2: i32) -> i32 {
     }
 }
 
+pub fn exclusive_or_gate(x1 :i32, x2: i32) -> i32 {
+    and_gate(not_and_gate(x1, x2), or_gate(x1, x2))
+}
+
+pub fn nand_not_gate(x:i32) -> i32 {
+    not_and_gate(x, x)
+}
+pub fn nand_and_gate(x1 :i32, x2: i32) -> i32 {
+    nand_not_gate(not_and_gate(x1,x2))
+}
+pub fn nand_or_gate(x1:i32, x2:i32) -> i32 {
+    not_and_gate(nand_not_gate(x1), nand_not_gate(x2))
+}
+
 fn times(x: &Vec<f32>, y: &Vec<f32>) -> Option<Vec<f32>> {
 
     if x.len() != y.len() {
